@@ -31,6 +31,14 @@ AffiseMMP.registerEvents([
 ])
 ```
 
+### For send custom parameters about the user
+```shell
+"affise_p_param_01": window.Telegram?.WebApp?.initDataUnsafe?.user?.username || 'Unknown username',
+"affise_p_param_02": window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name || 'Unknown first_name',
+"affise_p_param_03": window.Telegram?.WebApp?.initDataUnsafe?.user?.last_name || 'Unknown last_name',
+"affise_p_param_04": window.Telegram?.WebApp?.initDataUnsafe?.user?.language_code || 'Unknown language_code',
+```
+
 ### For send one event with simplify syntax
 ```shell
 AffiseMMP.sendEvent("Order", {
