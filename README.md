@@ -221,3 +221,37 @@ AffiseMMP.sendEvent("Order", {
 -    `affise_p_virtual_currency_name`           `String`
 -    `affise_p_vertical`                        `String`
 -    `affise_p_voucher_code`                    `String`
+
+
+## Example for ReactJS
+Add to `index.html` following code:
+```shell
+<script src="https://sdk.affisemmp.com/tg-mini-app.js"></script>
+```
+
+Example of init `AffiseMMP` and send event from React component:
+```shell
+function App() {
+  AffiseMMP.init({
+    affise_app_token: AFFISE_APP_TOKEN, // application token in affise mmp platform
+  })
+
+  return (
+    <Page />
+  )
+}
+
+function Page() {
+  const handleSendEvent = () => {
+    AffiseMMP.sendEvent("Order", {
+      "affise_p_order_id": "23123",
+      "affise_p_price": "2.19",
+      "affise_p_quantity": 1
+    })
+  }
+
+  return (
+    <button onClick={handleSendEvent}>Push me for send event</button>
+  )
+}
+```
