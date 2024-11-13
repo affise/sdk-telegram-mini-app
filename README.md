@@ -251,7 +251,44 @@ function Page() {
   }
 
   return (
-    <button onClick={handleSendEvent}>Push me for send event</button>
+    <button onClick={handleSendEvent}>Click me for send event</button>
   )
+}
+```
+
+
+## Example for Angular
+Example of init `AffiseMMP` and send event from Angular component:
+```shell
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+})
+export class ExampleComponent implements OnInit {
+  @Input() dependency: any;
+
+  ngOnInit() {
+    AffiseMMP.init({
+      affise_app_token: AFFISE_APP_TOKEN, // application token in affise mmp platform
+    })
+  }
+}
+```
+
+#### example.component.html
+```shell
+<button (click)="onButtonClick()">Click me for send event</button>
+```
+
+#### typescript
+```shell
+onButtonClick() {
+    AffiseMMP.sendEvent("Order", {
+      "affise_p_order_id": "23123",
+      "affise_p_price": "2.19",
+      "affise_p_quantity": 1
+    })
 }
 ```
