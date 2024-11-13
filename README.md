@@ -47,82 +47,83 @@ AffiseMMP.sendEvent("Order", {
   "affise_p_quantity": 1
 })
 ```
-
-### List of available `affise_event_name`
-- `AchieveLevel`
-- `AddPaymentInfo`
-- `AddToCart`
-- `AddToWishlist`
-- `AdRevenue`
-- `ClickAdv`
-- `CompleteRegistration`
-- `CompleteStream`
-- `CompleteTrial`
-- `CompleteTutorial`
-- `Contact`
-- `ContentItemsView`
-- `CustomizeProduct`
-- `DeepLinked`
-- `Donate`
-- `FindLocation`
-- `InitiateCheckout`
-- `InitiatePurchase`
-- `InitiateStream`
-- `Invite`
-- `LastAttributedTouch`
-- `Lead`
-- `ListView`
-- `Login`
-- `OpenedFromPushNotification`
-- `Order`
-- `OrderItemAdded`
-- `OrderItemRemove`
-- `OrderCancel`
-- `OrderReturnRequest`
-- `OrderReturnRequestCancel`
-- `Purchase`
-- `Rate`
-- `ReEngage`
-- `Reserve`
-- `Sales`
-- `Schedule`
-- `Search`
-- `Share`
-- `SpendCredits`
-- `StartRegistration`
-- `StartTrial`
-- `StartTutorial`
-- `SubmitApplication`
-- `Subscribe`
-- `TravelBooking`
-- `UnlockAchievement`
-- `Unsubscribe`
-- `Update`
-- `ViewAdv`
-- `ViewCart`
-- `ViewContent`
-- `ViewItem`
-- `ViewItems`
-- `InitialSubscription`
-- `InitialTrial`
-- `InitialOffer`
-- `ConvertedTrial`
-- `ConvertedOffer`
-- `TrialInRetry`
-- `OfferInRetry`
-- `SubscriptionInRetry`
-- `RenewedSubscription`
-- `FailedSubscriptionFromRetry`
-- `FailedOfferFromRetry`
-- `FailedTrialFromRetry`
-- `FailedSubscription`
-- `FailedOfferise`
-- `FailedTrial`
-- `ReactivatedSubscription`
-- `RenewedSubscriptionFromRetry`
-- `ConvertedOfferFromRetry`
-- `ConvertedTrialFromRetry`
-- `Unsubscription`
+<details>
+<summary>List of available `affise_event_name`</summary>
+- AchieveLevel </br>
+- AddPaymentInfo </br>
+- AddToCart </br>
+- AddToWishlist </br>
+- AdRevenue </br>
+- ClickAdv </br>
+- CompleteRegistration </br>
+- CompleteStream </br>
+- CompleteTrial </br>
+- CompleteTutorial </br>
+- Contact </br>
+- ContentItemsView </br>
+- CustomizeProduct </br>
+- DeepLinked </br>
+- Donate </br>
+- FindLocation </br>
+- InitiateCheckout </br>
+- InitiatePurchase </br>
+- InitiateStream </br>
+- Invite </br>
+- LastAttributedTouch </br>
+- Lead </br>
+- ListView </br>
+- Login </br>
+- OpenedFromPushNotification </br>
+- Order </br>
+- OrderItemAdded </br>
+- OrderItemRemove </br>
+- OrderCancel </br>
+- OrderReturnRequest </br>
+- OrderReturnRequestCancel </br>
+- Purchase </br>
+- Rate </br>
+- ReEngage </br>
+- Reserve </br>
+- Sales </br>
+- Schedule </br>
+- Search </br>
+- Share </br>
+- SpendCredits </br>
+- StartRegistration </br>
+- StartTrial </br>
+- StartTutorial </br>
+- SubmitApplication </br>
+- Subscribe </br>
+- TravelBooking </br>
+- UnlockAchievement </br>
+- Unsubscribe </br>
+- Update </br>
+- ViewAdv </br>
+- ViewCart </br>
+- ViewContent </br>
+- ViewItem </br>
+- ViewItems </br>
+- InitialSubscription </br>
+- InitialTrial </br>
+- InitialOffer </br>
+- ConvertedTrial </br>
+- ConvertedOffer </br>
+- TrialInRetry </br>
+- OfferInRetry </br>
+- SubscriptionInRetry </br>
+- RenewedSubscription </br>
+- FailedSubscriptionFromRetry </br>
+- FailedOfferFromRetry </br>
+- FailedTrialFromRetry </br>
+- FailedSubscription </br>
+- FailedOfferise </br>
+- FailedTrial </br>
+- ReactivatedSubscription </br>
+- RenewedSubscriptionFromRetry </br>
+- ConvertedOfferFromRetry </br>
+- ConvertedTrialFromRetry </br>
+- Unsubscription </br>
+</details>
 
 ### List of available keys for `affise_parameters`
 -    `affise_p_achievement_id`                  `String`
