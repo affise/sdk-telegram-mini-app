@@ -1,9 +1,19 @@
 # sdk-telegram-mini-app
 JS SDK for Telegram Mini App
 
+Table of contents
 - [sdk-telegram-mini-app](#sdk-telegram-mini-app)
   - [Getting started](#getting-started)
+    - [SDK initialization](#sdk-initialization)
+    - [For events registration](#for-events-registration)
+    - [For send custom parameters about the user](#for-send-custom-parameters-about-the-user)
+    - [For send one event with simplify syntax](#for-send-one-event-with-simplify-syntax)
     - [Check status](#check-status)
+  - [List of available `affise_event_name`](#list-of-available-affise_event_name)
+  - [List of available keys for `affise_parameters`](#list-of-available-keys-for-affise_parameters)
+  - [Example for ReactJS](#example-for-reactjs)
+  - [Example for Angular](#example-for-angular)
+
 
 ## Getting started
 ```html
