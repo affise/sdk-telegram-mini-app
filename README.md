@@ -47,6 +47,15 @@ AffiseMMP.sendEvent("Order", {
   "affise_p_quantity": 1
 })
 ```
+
+### Check status
+Method `AffiseMMP.checkStatus` return `Promise` <br />
+To use this method you must have sent at least one event
+```shell
+AffiseMMP.checkStatus()
+  .then((response) => response.json())
+```
+
 <details>
 <summary>List of available `affise_event_name`</summary>
 - AchieveLevel </br>
