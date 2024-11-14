@@ -32,13 +32,30 @@ class AffiseMMP {
         const payload = {
             created_time: Date.now(),
             affise_app_token: this.token,
-            tg_user_id: window.Telegram?.WebApp?.initDataUnsafe?.user?.id || 'test tg_user_id',
+            tg_user_id: window.Telegram?.WebApp?.initDataUnsafe?.user?.id || 'test_tg_user_id',
             user_agent: navigator.userAgent,
         }
         if (Array.isArray(events) && events.length !== 0) {
             payload.events = events
         }
         fetch(`${this.DOMAIN}/tg_postback`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        })
+    }
+
+    static checkStatus() {
+        const payload = {
+            created_time: Date.now(),
+            affise_app_token: this.token,
+            tg_user_id: window.Telegram?.WebApp?.initDataUnsafe?.user?.id || 'test_tg_user_id',
+            user_agent: navigator.userAgent,
+        }
+        return fetch(`${this.DOMAIN}/tg_check_status`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
