@@ -1,13 +1,17 @@
 # sdk-telegram-mini-app
 JS SDK for Telegram Mini App
 
+- [sdk-telegram-mini-app](#sdk-telegram-mini-app)
+  - [Getting started](#getting-started)
+    - [Check status](#check-status)
 
-```shell
+## Getting started
+```html
 <script src="https://sdk.affisemmp.com/tg-mini-app.js"></script>
 ```
 
 ### SDK initialization
-```shell
+```typescript
 AffiseMMP.init({
   affise_app_token: AFFISE_APP_TOKEN, // application token in affise mmp platform
 })
@@ -18,7 +22,7 @@ AffiseMMP.init({
 `affise_event_name` should be one from the list below
 
 `affise_parameters` keys should be one from the list below
-```shell
+```typescript
 AffiseMMP.registerEvents([
     {
         "affise_event_name": "Order",
@@ -40,7 +44,7 @@ AffiseMMP.registerEvents([
 ```
 
 ### For send one event with simplify syntax
-```shell
+```typescript
 AffiseMMP.sendEvent("Order", {
   "affise_p_order_id": "23123",
   "affise_p_price": "2.19",
@@ -51,13 +55,14 @@ AffiseMMP.sendEvent("Order", {
 ### Check status
 Method `AffiseMMP.checkStatus` return `Promise` <br />
 To use this method you must have sent at least one event
-```shell
+```typescript
 AffiseMMP.checkStatus()
   .then((response) => response.json())
 ```
 
+## List of available `affise_event_name`
 <details>
-<summary>List of available `affise_event_name`</summary>
+<summary>List</summary>
 - AchieveLevel </br>
 - AddPaymentInfo </br>
 - AddToCart </br>
@@ -134,7 +139,7 @@ AffiseMMP.checkStatus()
 - Unsubscription </br>
 </details>
 
-### List of available keys for `affise_parameters`
+## List of available keys for `affise_parameters`
 -    `affise_p_achievement_id`                  `String`
 -    `affise_p_adrev_ad_type`                   `String`
 -    `affise_p_brand`                           `String`
@@ -235,12 +240,12 @@ AffiseMMP.checkStatus()
 
 ## Example for ReactJS
 Add to `index.html` following code:
-```shell
+```html
 <script src="https://sdk.affisemmp.com/tg-mini-app.js"></script>
 ```
 
 Example of init `AffiseMMP` and send event from React component:
-```shell
+```typescript
 function App() {
   AffiseMMP.init({
     affise_app_token: AFFISE_APP_TOKEN, // application token in affise mmp platform
@@ -269,7 +274,7 @@ function Page() {
 
 ## Example for Angular
 Example of init `AffiseMMP` and send event from Angular component:
-```shell
+```typescript
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -287,13 +292,13 @@ export class ExampleComponent implements OnInit {
 }
 ```
 
-#### example.component.html
-```shell
+`example.component.html`
+```html
 <button (click)="onButtonClick()">Click me for send event</button>
 ```
 
-#### typescript
-```shell
+`typescript`
+```typescript
 onButtonClick() {
     AffiseMMP.sendEvent("Order", {
       "affise_p_order_id": "23123",
