@@ -16,6 +16,7 @@ JS SDK for Telegram Mini App
 
 
 ## Getting started
+Сonnect the script:
 ```html
 <script src="https://sdk.affisemmp.com/tg-mini-app.js"></script>
 ```
