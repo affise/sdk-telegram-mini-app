@@ -1,7 +1,7 @@
 # sdk-telegram-mini-app
 JS SDK for Telegram Mini App
 
-Table of contents
+#### Table of contents
 - [sdk-telegram-mini-app](#sdk-telegram-mini-app)
   - [Getting started](#getting-started)
     - [SDK initialization](#sdk-initialization)
